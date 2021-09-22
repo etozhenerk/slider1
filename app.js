@@ -38,3 +38,13 @@ upButton.addEventListener("click", () => {
 downButton.addEventListener("click", () => {
   changeSlide("down");
 });
+
+document.addEventListener("keydown", (e) => {
+  const key = e.key;
+
+  if (key === "ArrowUp") {
+    changeSlide("up");
+  } else if (key === "ArrowDown") {
+    changeSlide("down");
+  }
+});
